@@ -1,0 +1,446 @@
+/* Global */
+
+@font-face {
+    font-family: Muller;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: local('Muller'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-regular.eot'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-regular.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-regular.woff2') format('woff2'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-regular.woff') format('woff'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Muller;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: local('Muller'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-medium.eot'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-medium.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-medium.woff2') format('woff2'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-medium.woff') format('woff'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Muller;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: local('Muller'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-bold.eot'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-bold.eot?#iefix') format('embedded-opentype'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-bold.woff2') format('woff2'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-bold.woff') format('woff'),
+    url('https://cdn.virgilsecurity.com/assets/fonts/Muller/muller-bold.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.virgil-pure-global-container {
+    margin-top: 20px;
+    font-family: Muller, sans-serif;
+    max-width: 760px;
+    font-size: 14px;
+    background-color: #F1F1F1;
+    color: #333;
+}
+
+.virgil-pure-global-logo-container {
+    display: flex;
+    height: 76px;
+}
+
+.virgil-pure-global-logo {
+    flex: 1 1 auto;
+    width: auto;
+    height: 100%;
+}
+
+p.virgil-pure-global-logo-text {
+    margin-left: 30px;
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.virgil-pure-global-section {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.virgil-pure-global-info-p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.virgil-pure-global-container * {
+    box-sizing: border-box;
+}
+
+.virgil-pure-global-section-title {
+    font-size: 14px;
+    color: #0000CC;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+.virgil-pure-global-page-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+}
+
+.virgil-pure-global-line {
+    margin: 0;
+    border-top: 2px solid #0000CC;
+    margin-bottom: 10px;
+}
+
+.virgil-pure-global-button {
+    letter-spacing: 0.05em;
+    font-family: Muller, sans-serif;
+    font-weight: 500;
+    height: 40px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 10px 30px;
+    transition: 0.2s background;
+}
+
+.virgil-pure-global-button:disabled {
+    background-color: #0000FF;
+    color: white;
+    opacity: 0.5;
+}
+
+.virgil-pure-global-button:disabled:hover {
+    background-color: #0000FF;
+    color: white;
+    opacity: 0.5;
+    cursor: wait;
+}
+
+.virgil-pure-global-button:hover {
+    background-color: #0000FF;
+    cursor: pointer;
+}
+
+.virgil-pure-global-submit {
+    background-color: #0000CC;
+    color: white;
+}
+
+.virgil-pure-global-field-label {
+    display: block;
+    margin-bottom: 8px;
+    opacity: 0.33;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.virgil-pure-global-field-error {
+    display: block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+    color: #F44336;
+    margin-top: 6px;
+}
+
+.virgil-pure-global-field-input {
+    width: 100%;
+    border: 0;
+    border-radius: 3px;
+    height: 32px;
+    padding: 10px 6px;
+}
+
+.virgil-pure-global-field-input-error {
+    border: 1px solid #F44336;
+}
+
+/* DEMO */
+
+.virgil-pure-demo-container {
+    background-color: #0000CC;
+    padding: 15px 25px 15px 15px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.virgil-pure-demo-content {
+    width: 100%;
+}
+
+.virgil-pure-demo-title {
+    letter-spacing: 0.05em;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.virgil-pure-demo-desc {
+    opacity: 0.75;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.virgil-pure-demo-desc a {
+    color: white;
+}
+
+.virgil-pure-demo-button {
+    margin-top: 10px;
+    color: #0000CC;
+}
+
+a.virgil-pure-demo-link {
+    text-decoration: none;
+    background-color: white;
+    color: #0000CC;
+}
+
+a.virgil-pure-demo-link:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #0000CC;
+}
+
+.virgil-pure-demo-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* FAILED */
+
+.virgil-pure-failed-container {
+    background-color: #F44336;
+    padding: 15px 25px 15px 15px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.virgil-pure-failed-content {
+    max-width: 100%;
+}
+
+.virgil-pure-failed-title {
+    letter-spacing: 0.05em;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.virgil-pure-failed-desc {
+    opacity: 0.75;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.virgil-pure-failed-desc a {
+    color: white;
+}
+
+.virgil-pure-failed-button {
+    color: #F44336;
+}
+
+.virgil-pure-failed-button:hover {
+    background-color: rgba(255, 255, 255, 0.9)
+}
+
+/* INFO */
+
+.virgil-pure-info-table {
+    table-layout: auto;
+    text-align: left;
+}
+
+.virgil-pure-info-table td, .virgil-pure-info-table th {
+    word-wrap: break-word;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.virgil-pure-info-table th {
+    color: #333;
+    opacity: 0.33;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+.virgil-pure-info-table-key {
+    font-family: Muller;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.4;
+    padding-right: 30px;
+}
+
+.virgil-pure-info-table-value {
+    font-family: Muller;
+    /*font-size: 16px;*/
+}
+
+.virgil-pure-global-faq-question {
+    font-family: Muller;
+    font-size: 18px;
+    color: #0000CC;
+}
+
+.virgil-pure-global-faq-answer {
+    font-family: Muller;
+    font-size: 16px;
+}
+
+/* Credentials */
+
+.virgil-pure-credentials-form > div {
+    margin-bottom: 20px;
+}
+
+/* Migration */
+
+.virgil-pure-migration-container {
+    font-size: 16px;
+}
+
+p.virgil-pure-migration-users {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+p.virgil-pure-migration-count {
+    opacity: 0.3;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 6px;
+}
+
+.virgil-pure-global-credentials-ol {
+    margin-left: 18px;
+    font-size: 16px;
+}
+
+/* LOG */
+
+.virgil-pure-log-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.virgil-pure-log-table td, .virgil-pure-log-table th {
+    text-align: left;
+}
+
+.virgil-pure-log-table-tr-error {
+    color: red;
+}
+
+.virgil-pure-log-table-head th {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #0000CC;
+    border-bottom: 2px solid #0000CC;
+}
+
+.virgil-pure-log-table tr > td {
+    border-bottom: 1px solid lightgray;
+    padding: 10px 20px 10px 0;
+}
+
+.virgil-pure-log-table tr > td:last-child {
+    text-align: left;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.virgil-pure-log-table th:last-child {
+    text-align: left;
+}
+
+.virgil-pure-log-table tr:last-child > td {
+    border-bottom: 0;
+}
+
+.virgil-pure-log-table-date {
+    width: 175px;
+}
+
+.virgil-pure-log-margin-bottom {
+    margin-bottom: 40px;
+}
+
+.virgil-pure-log-paginator {
+    border: 1px solid lightgray;
+    height: 40px;
+    border-radius: 3px;
+    display: inline-flex;
+    font-weight: 500;
+}
+
+.virgil-pure-log-paginator-page {
+    padding: 11px 15px;
+    text-transform: uppercase;
+}
+
+.virgil-pure-log-paginator .page-numbers {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: none;
+    min-width: 40px;
+    padding: 0 10px;
+    height: 100%;
+    border-left: 1px solid lightgray;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.virgil-pure-log-paginator .current {
+    background-color: #0000CC;
+    border: 0;
+    color: white;
+}
+
+/* ROTATE */
+
+p.virgil-pure-rotate-desc {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
